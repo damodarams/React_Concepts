@@ -16,6 +16,9 @@ class Home extends Component {
           <li>
             <Link to="/Counter"> Counter Example</Link>
           </li>
+          <li>
+            <Link to="/CounterHooks"> Counter Example using hooks</Link>
+          </li>
         </ul>
       </div>
     );

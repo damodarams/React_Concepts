@@ -4,17 +4,24 @@ class Counter extends Component {
   // constructor(props) {
   //   super(props);
   state = {
-    Counter: 0
+    counter: 0
+    // this.state = {
+    //   counter: 0
+    // };
+    //this.increment = this.increment.bind(this);
   };
-
-  //this.increment = this.increment.bind(this);
-  //}
 
   increment = () => {
     this.setState({
-      Counter: this.state.Counter + 1
+      counter: this.state.counter + 1
     });
   };
+
+  // increment() {
+  //   this.setState({
+  //     counter: this.state.counter + 1
+  //   });
+  // }
 
   render() {
     return (
@@ -22,7 +29,7 @@ class Counter extends Component {
         <h1> Counter app using Class Component </h1>
         <button onClick={this.increment}>
           {" "}
-          you Clicked me {this.state.Counter} times
+          you Clicked me {this.state.counter} times
         </button>
         <Link to="/"> Go back to home </Link>
       </div>
